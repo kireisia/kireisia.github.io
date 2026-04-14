@@ -129,6 +129,110 @@ content:
             label: 注記
             type: string
 
+  # サービスカード（12枚）
+  - name: services
+    label: サービスカード一覧（12種）
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - name: aircon
+        label: エアコンクリーニング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: washer
+        label: 洗濯機クリーニング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: water
+        label: 水回りクリーニング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: sofa
+        label: ソファクリーニング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: mattress
+        label: マットレスクリーニング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: wall
+        label: 壁紙再生コーティング
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: vacant
+        label: 空室清掃
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: aircon_install
+        label: エアコン設置
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: shop
+        label: 店舗清掃
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: handyman
+        label: 便利屋
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: drain
+        label: 排水管洗浄
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+      - name: housekeeping
+        label: 家事代行
+        type: object
+        fields:
+          - {name: image, label: カード画像, type: image}
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+          - {name: price, label: 価格表示, type: string}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
