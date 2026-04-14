@@ -25,6 +25,110 @@ content:
         label: 営業時間
         type: string
 
+  # ヒーローセクション（トップ画面）
+  - name: hero
+    label: ヒーロー（トップ画面）
+    type: file
+    path: content/hero.json
+    format: json
+    fields:
+      - name: status_badge
+        label: ステータスバッジ（上部の緑丸アイコン横）
+        type: string
+      - name: catchphrase
+        label: メインキャッチコピー
+        type: object
+        fields:
+          - name: part1
+            label: 強調1（青色）
+            type: string
+          - name: part2
+            label: 中間1
+            type: string
+          - name: part3
+            label: 強調2（青色）
+            type: string
+          - name: part4
+            label: 中間2
+            type: string
+          - name: part5
+            label: 末尾（青下線付き）
+            type: string
+      - name: area_label_line1
+        label: 拠点テキスト 1行目
+        type: string
+      - name: area_label_line2
+        label: 拠点テキスト 2行目
+        type: string
+      - name: achievement_1
+        label: 実績バッジ 1（青色）
+        type: object
+        fields:
+          - name: number
+            label: 数字
+            type: string
+          - name: unit
+            label: 単位
+            type: string
+          - name: label
+            label: 説明
+            type: text
+      - name: achievement_2
+        label: 実績バッジ 2（青色）
+        type: object
+        fields:
+          - name: number
+            label: 数字
+            type: string
+          - name: unit
+            label: 単位
+            type: string
+          - name: label
+            label: 説明
+            type: text
+      - name: achievement_3
+        label: 実績バッジ 3（オレンジ色・★付き）
+        type: object
+        fields:
+          - name: number
+            label: 数字
+            type: string
+          - name: label
+            label: 説明
+            type: text
+      - name: achievement_4
+        label: 実績バッジ 4（オレンジ色）
+        type: object
+        fields:
+          - name: number
+            label: 数字
+            type: string
+          - name: unit
+            label: 単位
+            type: string
+          - name: label
+            label: 説明
+            type: text
+      - name: subtitle
+        label: サブタイトル（実績バッジの下の説明文）
+        type: text
+      - name: discount
+        label: 割引バッジ
+        type: object
+        fields:
+          - name: text_before
+            label: 文言（前）
+            type: string
+          - name: price
+            label: 割引額
+            type: string
+          - name: text_after
+            label: 文言（後）
+            type: string
+          - name: notes
+            label: 注記
+            type: string
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
