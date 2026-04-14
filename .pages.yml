@@ -233,6 +233,129 @@ content:
           - {name: description, label: 説明文, type: text}
           - {name: price, label: 価格表示, type: string}
 
+  # 選ばれる理由
+  - name: features
+    label: 選ばれる理由
+    type: file
+    path: content/features.json
+    format: json
+    fields:
+      - {name: section_title, label: セクションタイトル, type: string}
+      - {name: section_description, label: セクション説明文, type: text}
+      - name: item_1
+        label: 理由1
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明, type: text}
+      - name: item_2
+        label: 理由2
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明, type: text}
+      - name: item_3
+        label: 理由3
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明, type: text}
+
+  # 対応エリア
+  - name: areas
+    label: 対応エリア
+    type: file
+    path: content/areas.json
+    format: json
+    fields:
+      - {name: section_title, label: セクションタイトル, type: string}
+      - {name: section_description, label: セクション説明文, type: text}
+      - name: osaka
+        label: 大阪府
+        type: object
+        fields:
+          - {name: name, label: 府県名, type: string}
+          - {name: cities, label: 市区名一覧, type: text}
+      - name: kyoto
+        label: 京都府
+        type: object
+        fields:
+          - {name: name, label: 府県名, type: string}
+          - {name: cities, label: 市区名一覧, type: text}
+      - name: hyogo
+        label: 兵庫県
+        type: object
+        fields:
+          - {name: name, label: 府県名, type: string}
+          - {name: cities, label: 市区名一覧, type: text}
+      - name: nara
+        label: 奈良県
+        type: object
+        fields:
+          - {name: name, label: 府県名, type: string}
+          - {name: cities, label: 市区名一覧, type: text}
+      - {name: expanding_notice, label: エリア拡大中バッジ文言, type: text}
+
+  # FAQ（よくある質問）
+  - name: faq
+    label: よくある質問
+    type: file
+    path: content/faq.json
+    format: json
+    fields:
+      - {name: section_title, label: セクションタイトル, type: string}
+      - {name: section_description, label: セクション説明文, type: text}
+      - name: item_1
+        label: 質問1
+        type: object
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+      - name: item_2
+        label: 質問2
+        type: object
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+      - name: item_3
+        label: 質問3
+        type: object
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+      - name: item_4
+        label: 質問4
+        type: object
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+
+  # CTAバナー（サービス見出し・中間CTA・最終CTA）
+  - name: ctas
+    label: CTAバナー（見出し・申込誘導）
+    type: file
+    path: content/ctas.json
+    format: json
+    fields:
+      - name: services_section
+        label: サービスメニュー見出し
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+      - name: middle
+        label: 中間CTAバナー（選ばれる理由の下）
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+      - name: final
+        label: 最終CTA（ページ最下部）
+        type: object
+        fields:
+          - {name: title, label: タイトル, type: string}
+          - {name: description, label: 説明文, type: text}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
