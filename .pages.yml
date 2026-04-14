@@ -1,0 +1,53 @@
+# Pages CMS 設定ファイル
+# https://pagescms.org/docs/configuration
+
+# メディア（画像）の設定
+media:
+  input: images
+  output: images
+
+# コンテンツ編集可能項目
+content:
+  # 基本情報（電話番号・住所など）
+  - name: settings
+    label: 基本情報
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: phone
+        label: 電話番号
+        type: string
+      - name: address
+        label: 住所
+        type: text
+      - name: business_hours
+        label: 営業時間
+        type: string
+
+  # キャンペーン告知（サービス直下に表示）
+  - name: campaign
+    label: キャンペーン告知
+    type: file
+    path: content/campaign.json
+    format: json
+    fields:
+      - name: enabled
+        label: 表示する（ONにするとサイトに表示されます）
+        type: boolean
+        default: false
+      - name: badge
+        label: バッジ文言
+        type: string
+        default: "キャンペーン実施中"
+      - name: title
+        label: タイトル
+        type: string
+        default: "期間限定キャンペーンのお知らせ"
+      - name: body
+        label: 本文
+        type: text
+      - name: period
+        label: 期間
+        type: string
+        default: "期間：未定"

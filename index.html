@@ -1480,4 +1480,56 @@ else{d.classList.remove('bg-primary');d.classList.add('bg-border');}
 slider.style.scrollbarWidth='none';
 })();
 </script>
+<!-- Pages CMS データ読み込み -->
+<script>
+// content/*.json を読み込んでHTML上のdata-cms-field要素に反映する
+(async function loadCmsContent(){
+  try {
+    // キャンペーン告知の読み込み
+    const campaignResponse = await fetch('content/campaign.json', {cache:'no-cache'});
+    if (campaignResponse.ok) {
+      const campaign = await campaignResponse.json();
+      const section = document.getElementById('campaign');
+      if (section) {
+        // 表示ON/OFF切り替え
+        if (campaign.enabled) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+        // 各フィールドをHTMLに反映
+        const badgeElement = document.querySelector('[data-cms-field="campaign.badge"]');
+        if (badgeElement && campaign.badge) badgeElement.textContent = campaign.badge;
+        const titleElement = document.querySelector('[data-cms-field="campaign.title"]');
+        if (titleElement && campaign.title) titleElement.textContent = campaign.title;
+        const bodyElement = document.querySelector('[data-cms-field="campaign.body"]');
+        if (bodyElement && campaign.body) bodyElement.textContent = campaign.body;
+        const periodElement = document.querySelector('[data-cms-field="campaign.period"]');
+        if (periodElement && campaign.period) periodElement.textContent = campaign.period;
+      }
+    }
+
+    // 基本情報の読み込み
+    const settingsResponse = await fetch('content/settings.json', {cache:'no-cache'});
+    if (settingsResponse.ok) {
+      const settings = await settingsResponse.json();
+      // 電話番号をすべて差し替え（tel:リンクとテキスト表示）
+      if (settings.phone) {
+        document.querySelectorAll('[href^="tel:"]').forEach(function(link){
+          link.href = 'tel:' + settings.phone.replace(/-/g, '');
+          // 電話番号のテキスト表示がある場合は更新（SVGアイコン直後のテキスト）
+          link.childNodes.forEach(function(node){
+            if (node.nodeType === 3 && /\d{2,4}-\d{2,4}-\d{4}/.test(node.textContent)) {
+              node.textContent = settings.phone;
+            }
+          });
+        });
+      }
+    }
+  } catch (error) {
+    // 読み込み失敗時はHTMLのデフォルト値をそのまま使用
+    console.warn('CMSコンテンツ読み込みエラー:', error);
+  }
+})();
+</script>
 </body></html>
