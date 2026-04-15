@@ -1,8 +1,7 @@
 {
-  "enabled": true,
+  "enabled": false,
   "badge": "キャンペーン実施中",
   "title": "期間限定キャンペーンのお知らせ",
-  "image": "",
   "body": "ここにキャンペーン内容を記載します。",
   "period": "期間：未定"
 }
