@@ -134,6 +134,27 @@
 <a href="https://liff.line.me/2009762744-ksEAwsSp?unique_key=cZRYo2&ts=1776083395" class="line-btn w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white font-bold px-8 py-4 rounded-full text-base"><img src="images/line-brand-icon.png" alt="LINE" class="w-8 h-8 rounded-lg">無料お見積り</a>
 <a href="tel:06-7493-0993" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-primary-50 text-text-main font-medium px-8 py-4 rounded-full text-base ring-1 ring-border hover:ring-primary/30 transition-all duration-200"><svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.94.39 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.87.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話で問い合わせ</a>
 </div></div></div></section>
+<!-- CAMPAIGN / ANNOUNCEMENT（サービス一覧の最上部・CMS編集可）-->
+<section id="campaign" class="pt-14 sm:pt-20 pb-0 bg-surface hidden" data-cms-section="campaign">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
+<div class="bg-white rounded-2xl shadow-lg ring-1 ring-warm/20 p-6 sm:p-10 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-warm via-primary to-accent"></div>
+<div class="flex items-center justify-center gap-2 mb-4">
+<span class="inline-flex items-center gap-1.5 bg-warm/10 text-warm text-xs font-bold px-3 py-1.5 rounded-full ring-1 ring-warm/20">
+<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<span data-cms-field="campaign.badge">キャンペーン実施中</span>
+</span>
+</div>
+<h2 class="font-display font-bold text-2xl sm:text-3xl text-center text-text-main tracking-tight mb-4" data-cms-field="campaign.title">期間限定キャンペーンのお知らせ</h2>
+<div class="text-text-sub text-sm sm:text-base leading-relaxed text-center max-w-2xl mx-auto" data-cms-field="campaign.body">
+ここにキャンペーン内容を記載します。（Pages CMSから編集可能）
+</div>
+<div class="text-center mt-6" data-cms-field="campaign.period_wrap">
+<span class="inline-block bg-primary-50 text-primary text-xs font-bold px-4 py-2 rounded-full" data-cms-field="campaign.period">期間：未定</span>
+</div>
+</div>
+</div>
+</section>
 <!-- SERVICES -->
 <section id="services" class="py-16 sm:py-24 bg-surface">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,28 +185,6 @@
 <!-- Card: 家事代行 -->
 <div class="service-card bg-card rounded-2xl ring-1 ring-border overflow-hidden group" data-reveal><div class="relative h-48 sm:h-52 overflow-hidden"><img src="images/housekeeping-top.png" alt="家事代行サービス" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-cms-field="services.housekeeping.image"></div><div class="p-6"><h3 class="font-display font-bold text-lg tracking-tight mb-2" data-cms-field="services.housekeeping.title">家事代行</h3><p class="text-sm text-text-sub leading-relaxed mb-4" data-cms-field="services.housekeeping.description">プロが行うお掃除特化型の家事代行。掃除のコツもアドバイスいたします。</p><div class="flex items-center justify-between"><span class="text-primary font-bold text-sm" data-cms-field="services.housekeeping.price">¥3,500〜（税込）</span><button data-modal="housekeeping" class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark transition-colors cursor-pointer">詳細<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button></div></div></div>
 </div></div></section>
-<!-- CAMPAIGN / ANNOUNCEMENT（CMS編集可）-->
-<!-- 表示するには下のsectionのhiddenを削除してください -->
-<section id="campaign" class="py-12 sm:py-16 bg-gradient-to-br from-warm-light to-primary-50 hidden" data-cms-section="campaign">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
-<div class="bg-white rounded-2xl shadow-lg ring-1 ring-warm/20 p-6 sm:p-10 relative overflow-hidden">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-warm via-primary to-accent"></div>
-<div class="flex items-center justify-center gap-2 mb-4">
-<span class="inline-flex items-center gap-1.5 bg-warm/10 text-warm text-xs font-bold px-3 py-1.5 rounded-full ring-1 ring-warm/20">
-<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-<span data-cms-field="campaign.badge">キャンペーン実施中</span>
-</span>
-</div>
-<h2 class="font-display font-bold text-2xl sm:text-3xl text-center text-text-main tracking-tight mb-4" data-cms-field="campaign.title">期間限定キャンペーンのお知らせ</h2>
-<div class="text-text-sub text-sm sm:text-base leading-relaxed text-center max-w-2xl mx-auto" data-cms-field="campaign.body">
-ここにキャンペーン内容を記載します。（Pages CMSから編集可能）
-</div>
-<div class="text-center mt-6" data-cms-field="campaign.period_wrap">
-<span class="inline-block bg-primary-50 text-primary text-xs font-bold px-4 py-2 rounded-full" data-cms-field="campaign.period">期間：未定</span>
-</div>
-</div>
-</div>
-</section>
 <!-- FEATURES -->
 <section id="features" class="py-16 sm:py-24 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-12 sm:mb-16" data-reveal><span class="inline-block text-primary text-sm font-bold tracking-widest uppercase mb-3">WHY CHOOSE US</span><h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-text-main mb-4" data-cms-field="features.section_title">キレイシアが選ばれる3つの理由</h2><p class="text-text-sub max-w-xl mx-auto" data-cms-field="features.section_description">確かな技術・明朗料金・自社研修の安定品質。<br class="sm:hidden">エアコン4,000台以上の実績と<br class="sm:hidden">口コミ4.77の評価で<br class="sm:hidden">お客様に選ばれ続けています。</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
 <div class="text-center" data-reveal><div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5"><svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 class="font-display font-bold text-lg tracking-tight mb-3" data-cms-field="features.item_1.title">確かな技術と安心</h3><p class="text-sm text-text-sub leading-relaxed" data-cms-field="features.item_1.description">経験に裏打ちされた技術と知識で最適なクリーニングをお届け。品質への妥協は一切いたしません。</p></div>
