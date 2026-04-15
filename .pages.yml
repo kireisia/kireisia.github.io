@@ -906,6 +906,159 @@ content:
             options: {values: [main, warm, red]}
       - {name: cancellation_note, label: キャンセル料金 注記, type: string}
 
+  # サービス詳細：店舗清掃
+  - name: modal_shop
+    label: 詳細：店舗清掃
+    type: file
+    path: content/modals/shop.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: intro, label: 紹介文, type: text}
+      - {name: menu_title, label: メニュー 見出し, type: string}
+      - {name: menu_note, label: メニュー 注記, type: string}
+      - name: menu_list
+        label: メニュー 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: biz_aircon_title, label: 業務用エアコン 見出し, type: string}
+      - name: biz_aircon_list
+        label: 業務用エアコン 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: biz_aircon_note, label: 業務用エアコン 注記, type: string}
+      - {name: aircon_option_title, label: エアコンオプション 見出し, type: string}
+      - name: aircon_option_list
+        label: エアコンオプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: booking_notes_title, label: 予約注意事項 見出し, type: string}
+      - name: booking_notes_list
+        label: 予約注意事項 項目
+        type: string
+        list: true
+      - {name: faq_title, label: FAQ 見出し, type: string}
+      - name: faq_list
+        label: FAQ 項目
+        type: object
+        list: true
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+
+  # サービス詳細：便利屋
+  - name: modal_handyman
+    label: 詳細：便利屋
+    type: file
+    path: content/modals/handyman.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: intro_strong, label: 紹介文 強調, type: string}
+      - {name: intro_text, label: 紹介文 本文, type: text}
+      - {name: menu_title, label: メニュー 見出し, type: string}
+      - {name: menu_note, label: メニュー 注記, type: string}
+      - name: menu_list
+        label: メニュー 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: support_title, label: お困りごとサポート 見出し, type: string}
+      - {name: support_title_note, label: 見出し注記, type: string}
+      - {name: support_intro, label: サポート紹介文, type: text}
+      - {name: support_without_tools_label, label: 道具なしラベル, type: string}
+      - name: support_without_tools_list
+        label: 道具なし料金
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: support_with_tools_label, label: 道具ありラベル, type: string}
+      - name: support_with_tools_list
+        label: 道具あり料金
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: support_note, label: サポート注記, type: string}
+      - {name: examples_title, label: 作業例 見出し, type: string}
+      - name: examples_list
+        label: 作業例 項目
+        type: string
+        list: true
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - name: faq_list
+        label: FAQ 項目
+        type: object
+        list: true
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+
+  # サービス詳細：排水管洗浄
+  - name: modal_drain
+    label: 詳細：排水管洗浄
+    type: file
+    path: content/modals/drain.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: intro, label: 紹介文, type: text}
+      - {name: price_note, label: 料金注記, type: text}
+
+  # サービス詳細：家事代行
+  - name: modal_housekeeping
+    label: 詳細：家事代行
+    type: file
+    path: content/modals/housekeeping.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: badge_1, label: バッジ1, type: string}
+      - {name: badge_1_strong, label: バッジ1強調, type: string}
+      - {name: badge_2, label: バッジ2, type: string}
+      - {name: intro, label: 紹介文, type: text}
+      - {name: price_section_title, label: 料金 見出し, type: string}
+      - {name: price_section_note, label: 料金 注記, type: string}
+      - name: price_list
+        label: 料金 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_note, label: 料金下注記, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
