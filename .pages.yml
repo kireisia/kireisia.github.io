@@ -811,6 +811,101 @@ content:
           - {name: after_image, label: After画像, type: image}
           - {name: after_alt, label: After画像説明, type: string}
 
+  # サービス詳細：空室清掃
+  - name: modal_vacant
+    label: 詳細：空室清掃
+    type: file
+    path: content/modals/vacant.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: intro, label: 紹介文, type: text}
+      - {name: price_section_title, label: 料金表 見出し, type: string}
+      - {name: price_section_note, label: 料金表 注記, type: string}
+      - name: price_list
+        label: 料金表 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 間取り, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: customer_request_title, label: お客様お願い 見出し, type: string}
+      - name: customer_request_list
+        label: お客様お願い 項目
+        type: string
+        list: true
+      - {name: cancellation_title, label: キャンセル料金 見出し, type: string}
+      - name: cancellation_list
+        label: キャンセル料金 項目
+        type: object
+        list: true
+        fields:
+          - {name: period, label: 期間, type: string}
+          - {name: rate, label: 料率, type: string}
+          - name: color
+            label: 強調色
+            type: select
+            options: {values: [main, warm, red]}
+      - {name: cancellation_note, label: キャンセル料金 注記, type: string}
+
+  # サービス詳細：エアコン設置
+  - name: modal_aircon_install
+    label: 詳細：エアコン設置
+    type: file
+    path: content/modals/aircon_install.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: badge_1, label: バッジ1, type: string}
+      - {name: badge_1_strong, label: バッジ1強調, type: string}
+      - {name: badge_2, label: バッジ2, type: string}
+      - {name: intro, label: 紹介文, type: text}
+      - {name: price_section_title, label: 料金表 見出し, type: string}
+      - {name: price_section_note, label: 料金表 注記, type: string}
+      - name: price_list
+        label: 料金表 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_note, label: 料金表 下注記, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: customer_request_title, label: お客様お願い 見出し, type: string}
+      - name: customer_request_list
+        label: お客様お願い 項目
+        type: string
+        list: true
+      - {name: booking_notes_title, label: 予約注意事項 見出し, type: string}
+      - name: booking_notes_list
+        label: 予約注意事項 項目
+        type: string
+        list: true
+      - {name: cancellation_title, label: キャンセル料金 見出し, type: string}
+      - name: cancellation_list
+        label: キャンセル料金 項目
+        type: object
+        list: true
+        fields:
+          - {name: period, label: 期間, type: string}
+          - {name: rate, label: 料率, type: string}
+          - name: color
+            label: 強調色
+            type: select
+            options: {values: [main, warm, red]}
+      - {name: cancellation_note, label: キャンセル料金 注記, type: string}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
