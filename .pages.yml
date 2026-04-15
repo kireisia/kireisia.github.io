@@ -356,6 +356,103 @@ content:
           - {name: title, label: タイトル, type: string}
           - {name: description, label: 説明文, type: text}
 
+  # サービス詳細：エアコンクリーニング（モーダル）
+  - name: modal_aircon
+    label: 詳細：エアコンクリーニング
+    type: file
+    path: content/modals/aircon.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: badge_1_line1, label: バッジ1上段（全機種対応）, type: string}
+      - {name: badge_2_line1, label: バッジ2上段, type: string}
+      - {name: badge_2_line2, label: バッジ2下段（強調）, type: string}
+      - {name: badge_3_line1, label: バッジ3上段（保険加入済み）, type: string}
+      - {name: concerns_title, label: お悩みリスト 見出し, type: string}
+      - name: concerns_list
+        label: お悩みリスト 項目
+        type: string
+        list: true
+      - {name: concerns_outro, label: お悩みリスト 締めの一文, type: string}
+      - {name: price_section_title, label: 価格表 見出し, type: string}
+      - {name: price_section_note, label: 価格表 注記, type: string}
+      - {name: price_group_1_name, label: 価格表 グループ1名（家庭用）, type: string}
+      - name: price_group_1_items
+        label: 価格表 グループ1 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_group_1_note, label: 価格表 グループ1 注記, type: string}
+      - {name: price_group_2_name, label: 価格表 グループ2名（業務用）, type: string}
+      - name: price_group_2_items
+        label: 価格表 グループ2 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: options_title, label: オプション 見出し, type: string}
+      - name: options_list
+        label: オプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: points_title, label: キレイシアのポイント 見出し, type: string}
+      - {name: points_intro, label: キレイシアのポイント リード文, type: string}
+      - name: points_list
+        label: キレイシアのポイント 項目
+        type: string
+        list: true
+      - {name: before_after_title, label: Before/After 見出し, type: string}
+      - name: before_after_slides
+        label: Before/After スライド（追加・削除可）
+        type: object
+        list: true
+        fields:
+          - {name: caption, label: キャプション, type: string}
+          - {name: before_image, label: Before画像, type: image}
+          - {name: before_alt, label: Before画像の説明（SEO用）, type: string}
+          - {name: after_image, label: After画像, type: image}
+          - {name: after_alt, label: After画像の説明（SEO用）, type: string}
+      - {name: customer_request_title, label: お客様へお願い 見出し, type: string}
+      - name: customer_request_list
+        label: お客様へお願い 項目
+        type: string
+        list: true
+      - {name: booking_notes_title, label: 予約注意事項 見出し, type: string}
+      - name: booking_notes_list
+        label: 予約注意事項 項目
+        type: string
+        list: true
+      - {name: faq_title, label: FAQ 見出し, type: string}
+      - name: faq_list
+        label: FAQ 項目（追加・削除可）
+        type: object
+        list: true
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+      - {name: cancellation_title, label: キャンセル料金 見出し, type: string}
+      - name: cancellation_list
+        label: キャンセル料金 項目
+        type: object
+        list: true
+        fields:
+          - {name: period, label: 期間, type: string}
+          - {name: rate, label: 料率, type: string}
+          - name: color
+            label: 強調色
+            type: select
+            options: {values: [main, warm, red]}
+      - {name: cancellation_note, label: キャンセル料金 注記, type: string}
+      - {name: seo_title, label: SEOテキスト タイトル, type: string}
+      - {name: seo_paragraph_1, label: SEOテキスト 段落1, type: text}
+      - {name: seo_paragraph_2, label: SEOテキスト 段落2, type: text}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
