@@ -453,6 +453,96 @@ content:
       - {name: seo_paragraph_1, label: SEOテキスト 段落1, type: text}
       - {name: seo_paragraph_2, label: SEOテキスト 段落2, type: text}
 
+  # サービス詳細：洗濯機クリーニング（モーダル）
+  - name: modal_washer
+    label: 詳細：洗濯機クリーニング
+    type: file
+    path: content/modals/washer.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: badge_1, label: バッジ1上段, type: string}
+      - {name: badge_1_strong, label: バッジ1強調, type: string}
+      - {name: badge_2, label: バッジ2, type: string}
+      - {name: badge_3, label: バッジ3上段, type: string}
+      - {name: badge_3_strong, label: バッジ3強調, type: string}
+      - {name: concerns_title, label: お悩みリスト 見出し, type: string}
+      - name: concerns_list
+        label: お悩みリスト 項目
+        type: string
+        list: true
+      - {name: concerns_outro, label: お悩みリスト 締めの一文, type: string}
+      - {name: price_section_title, label: 価格表 見出し, type: string}
+      - {name: price_section_note, label: 価格表 注記, type: string}
+      - {name: price_group_1_name, label: 価格表 グループ1名, type: string}
+      - name: price_group_1_items
+        label: 価格表 グループ1 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_group_1_note, label: 価格表 グループ1 注記, type: string}
+      - {name: price_group_2_name, label: 価格表 グループ2名, type: string}
+      - {name: price_subgroup_2a_label, label: グループ2 サブヘッダーA, type: string}
+      - name: price_subgroup_2a_items
+        label: グループ2 サブA項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_subgroup_2b_label, label: グループ2 サブヘッダーB, type: string}
+      - name: price_subgroup_2b_items
+        label: グループ2 サブB項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - name: price_warning_list
+        label: 価格表 注意書き
+        type: string
+        list: true
+      - {name: options_title, label: オプション 見出し, type: string}
+      - name: options_list
+        label: オプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: before_after_title, label: Before/After 見出し, type: string}
+      - name: before_after_slides
+        label: Before/After スライド
+        type: object
+        list: true
+        fields:
+          - {name: caption, label: キャプション, type: string}
+          - {name: before_image, label: Before画像, type: image}
+          - {name: before_alt, label: Before画像説明, type: string}
+          - {name: after_image, label: After画像, type: image}
+          - {name: after_alt, label: After画像説明, type: string}
+      - {name: booking_notes_title, label: 予約注意事項 見出し, type: string}
+      - name: booking_notes_list
+        label: 予約注意事項 項目
+        type: string
+        list: true
+      - {name: faq_title, label: FAQ 見出し, type: string}
+      - name: faq_list
+        label: FAQ 項目
+        type: object
+        list: true
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
