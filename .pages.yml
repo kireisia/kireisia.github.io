@@ -661,6 +661,156 @@ content:
           - {name: question, label: 質問, type: string}
           - {name: answer, label: 回答, type: text}
 
+  # サービス詳細：マットレスクリーニング
+  - name: modal_mattress
+    label: 詳細：マットレスクリーニング
+    type: file
+    path: content/modals/mattress.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: price_one_side_title, label: 片面仕上げ 見出し, type: string}
+      - {name: price_one_side_note, label: 片面仕上げ 注記, type: string}
+      - name: price_one_side_list
+        label: 片面仕上げ 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: サイズ, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: price_one_side_warning, label: 片面仕上げ 警告, type: string}
+      - {name: price_both_side_title, label: 両面仕上げ 見出し, type: string}
+      - name: price_both_side_list
+        label: 両面仕上げ 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: サイズ, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: options_title, label: オプション 見出し, type: string}
+      - name: options_list
+        label: オプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: size_chart_title, label: サイズ表 見出し, type: string}
+      - name: size_chart_list
+        label: サイズ表 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 名称, type: string}
+          - {name: price, label: 値, type: string}
+      - {name: size_chart_note, label: サイズ表 注記, type: string}
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: before_after_title, label: Before/After 見出し, type: string}
+      - name: before_after_slides
+        label: Before/After スライド
+        type: object
+        list: true
+        fields:
+          - {name: caption, label: キャプション, type: string}
+          - {name: before_image, label: Before画像, type: image}
+          - {name: before_alt, label: Before画像説明, type: string}
+          - {name: after_image, label: After画像, type: image}
+          - {name: after_alt, label: After画像説明, type: string}
+      - {name: no_clean_title, label: 洗浄不可製品 見出し, type: string}
+      - name: no_clean_list
+        label: 洗浄不可製品 項目
+        type: string
+        list: true
+      - {name: location_title, label: 施工場所 見出し, type: string}
+      - name: location_list
+        label: 施工場所 項目
+        type: string
+        list: true
+      - {name: duration_title, label: 作業時間 見出し, type: string}
+      - name: duration_list
+        label: 作業時間 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 条件, type: string}
+          - {name: price, label: 時間, type: string}
+      - {name: duration_note, label: 作業時間 注記, type: string}
+
+  # サービス詳細：壁紙再生コーティング
+  - name: modal_wall
+    label: 詳細：壁紙再生コーティング
+    type: file
+    path: content/modals/wall.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: concept_title, label: コンセプト 見出し, type: string}
+      - {name: concept_text, label: コンセプト 本文, type: text}
+      - {name: merit_1_title, label: メリット1 見出し, type: string}
+      - {name: merit_1_text, label: メリット1 本文, type: text}
+      - {name: merit_2_title, label: メリット2 見出し, type: string}
+      - {name: merit_2_text, label: メリット2 本文, type: text}
+      - {name: price_section_title, label: 料金目安 見出し, type: string}
+      - {name: price_section_note, label: 料金目安 注記, type: string}
+      - {name: price_group_1_name, label: グループ1 名称, type: string}
+      - name: price_group_1_items
+        label: グループ1 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: price_group_2_name, label: グループ2 名称, type: string}
+      - name: price_group_2_items
+        label: グループ2 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: price_group_3_name, label: グループ3 名称, type: string}
+      - name: price_group_3_items
+        label: グループ3 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: price_group_4_name, label: グループ4 名称, type: string}
+      - name: price_group_4_items
+        label: グループ4 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: price_group_5_name, label: グループ5 名称, type: string}
+      - name: price_group_5_items
+        label: グループ5 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: price_group_6_name, label: グループ6 名称, type: string}
+      - name: price_group_6_items
+        label: グループ6 項目
+        type: object
+        list: true
+        fields: [{name: name, label: 項目, type: string}, {name: price, label: 価格, type: string}]
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: before_after_title, label: Before/After 見出し, type: string}
+      - name: before_after_slides
+        label: Before/After スライド
+        type: object
+        list: true
+        fields:
+          - {name: caption, label: キャプション, type: string}
+          - {name: before_image, label: Before画像, type: image}
+          - {name: before_alt, label: Before画像説明, type: string}
+          - {name: after_image, label: After画像, type: image}
+          - {name: after_alt, label: After画像説明, type: string}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知

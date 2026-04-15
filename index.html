@@ -710,124 +710,96 @@
 <!-- mattress modal -->
 <div id="modal-mattress" class="modal-overlay fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm" aria-hidden="true" role="dialog" aria-label="マットレスクリーニング詳細">
 <div class="modal-panel bg-white w-full sm:max-w-2xl sm:rounded-2xl rounded-t-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
-<div class="sticky top-0 bg-white z-10 flex items-center justify-between px-6 py-4 border-b border-border"><h2 class="font-display font-bold text-lg tracking-tight">マットレスクリーニング</h2><button class="modal-close w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface transition-colors" aria-label="閉じる"><svg class="w-5 h-5 text-text-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+<div class="sticky top-0 bg-white z-10 flex items-center justify-between px-6 py-4 border-b border-border"><h2 class="font-display font-bold text-lg tracking-tight" data-cms-field="modal_mattress.title">マットレスクリーニング</h2><button class="modal-close w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface transition-colors" aria-label="閉じる"><svg class="w-5 h-5 text-text-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
 <div class="p-6 sm:p-8">
 <!-- 基本料金（片面仕上げ） -->
-<div class="flex items-baseline gap-3 mb-3"><h3 class="font-display font-bold text-base">基本料金（片面仕上げ）</h3><span class="text-[10px] text-text-light">※すべて税込価格 / 枚あたり</span></div>
-<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">ベビー・キッズ</span><span class="text-primary font-bold">¥7,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">シングル</span><span class="text-primary font-bold">¥9,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">セミダブル・ダブル</span><span class="text-primary font-bold">¥12,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">クイーン・キング</span><span class="text-primary font-bold">¥16,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
+<div class="flex items-baseline gap-3 mb-3"><h3 class="font-display font-bold text-base" data-cms-field="modal_mattress.price_one_side_title">基本料金（片面仕上げ）</h3><span class="text-[10px] text-text-light" data-cms-field="modal_mattress.price_one_side_note">※すべて税込価格 / 枚あたり</span></div>
+<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2" data-cms-list="modal_mattress.price_one_side_list" data-cms-template="tpl-price-row">
+<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">ベビー・キッズ</span><span class="text-primary font-bold">¥7,000 /枚</span></div>
 </div>
-<p class="text-[10px] text-text-light mb-6">※全て片面仕上げの金額です</p>
+<p class="text-[10px] text-text-light mb-6" data-cms-field="modal_mattress.price_one_side_warning">※全て片面仕上げの金額です</p>
 <!-- 両面仕上げ料金 -->
-<h3 class="font-display font-bold text-base mb-3">両面仕上げ料金</h3>
-<div class="rounded-xl ring-1 ring-border overflow-hidden mb-6">
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">シングルサイズ</span><span class="text-primary font-bold">¥15,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">セミダブル・ダブルサイズ</span><span class="text-primary font-bold">¥20,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
-<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">クイーン・キングサイズ</span><span class="text-primary font-bold">¥25,000<span class="text-[10px] text-text-light font-normal ml-1">/枚</span></span></div>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.price_both_side_title">両面仕上げ料金</h3>
+<div class="rounded-xl ring-1 ring-border overflow-hidden mb-6" data-cms-list="modal_mattress.price_both_side_list" data-cms-template="tpl-price-row">
+<div class="price-row flex justify-between items-center px-5 py-3.5 text-sm"><span class="text-text-main font-medium">シングルサイズ</span><span class="text-primary font-bold">¥15,000 /枚</span></div>
 </div>
 <!-- オプション -->
-<h3 class="font-display font-bold text-base mb-3">オプション</h3>
-<div class="rounded-xl ring-1 ring-border overflow-hidden mb-6">
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.options_title">オプション</h3>
+<div class="rounded-xl ring-1 ring-border overflow-hidden mb-6" data-cms-list="modal_mattress.options_list" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-3 text-sm"><span class="text-text-main font-medium">シミ取り</span><span class="text-primary font-bold">¥1,500</span></div>
 </div>
 <!-- マットレスサイズについて -->
-<h3 class="font-display font-bold text-base mb-3">マットレスサイズについて</h3>
-<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.size_chart_title">マットレスサイズについて</h3>
+<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2" data-cms-list="modal_mattress.size_chart_list" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">シングル</span><span class="text-text-sub">幅100cm未満</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">セミダブル・ダブル</span><span class="text-text-sub">幅140cm未満</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">クイーン・キング</span><span class="text-text-sub">幅200cm未満</span></div>
 </div>
-<p class="text-[10px] text-text-light mb-6">※各メーカーの基準を平均化したものとなります。ワイドダブルサイズはクイーンサイズの料金となります。</p>
+<p class="text-[10px] text-text-light mb-6" data-cms-field="modal_mattress.size_chart_note">※各メーカーの基準を平均化したものとなります。ワイドダブルサイズはクイーンサイズの料金となります。</p>
 <!-- キレイシアのポイント -->
-<h3 class="font-display font-bold text-base mb-3">キレイシアのポイント</h3>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.points_title">キレイシアのポイント</h3>
 <div class="bg-primary-50 rounded-xl p-5 mb-6">
-<p class="font-display font-bold text-sm text-primary-dark mb-3" style="color:#2AA5D4">☆ソファークリーニング☆安心の快適くつろぎ空間へ！</p>
-<ul class="space-y-2">
+<p class="font-display font-bold text-sm text-primary-dark mb-3" style="color:#2AA5D4" data-cms-field="modal_mattress.points_intro">☆ソファークリーニング☆安心の快適くつろぎ空間へ！</p>
+<ul class="space-y-2" data-cms-list="modal_mattress.points_list" data-cms-template="tpl-point-item">
 <li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>粗相・嘔吐も追加費用一切なし</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>安心の損害保険加入済み</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>作業時はマスク・使い捨て手袋着用</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>対応地域外の予約も対応可能</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>作業にご不満の場合は無料にて追加対応</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>コロナ対策の徹底</li>
 </ul>
 </div>
 <!-- Before / After（スワイプ式カルーセル） -->
-<h3 class="font-display font-bold text-base mb-3">Before / After</h3>
-<div class="ba-gallery-mattress mb-6">
-<div class="ba-slider-mattress flex overflow-x-auto snap-x snap-mandatory rounded-xl" style="scrollbar-width:none;-ms-overflow-style:none">
-<!-- スライド1: マットレス シミ取り -->
-<div class="ba-slide-mattress flex-shrink-0 w-full snap-center" data-caption="マットレス シミ取りクリーニング">
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.before_after_title">Before / After</h3>
+<div class="ba-gallery mb-6">
+<div class="flex overflow-x-auto snap-x snap-mandatory rounded-xl" style="scrollbar-width:none;-ms-overflow-style:none" data-cms-list="modal_mattress.before_after_slides" data-cms-template="tpl-ba-slide">
+<div class="ba-slide flex-shrink-0 w-full snap-center" data-caption="マットレス シミ取りクリーニング">
 <div class="grid grid-cols-2 gap-2">
 <div class="relative rounded-l-xl overflow-hidden"><span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">Before</span><img src="images/mattress-before1.jpg" alt="マットレス 黄ばみ・シミ付着状態" class="w-full aspect-[4/3] object-cover" loading="lazy"></div>
 <div class="relative rounded-r-xl overflow-hidden"><span class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">After</span><img src="images/mattress-after1.jpg" alt="マットレス シミ取りクリーニング後" class="w-full aspect-[4/3] object-cover" loading="lazy"></div>
 </div></div>
-<!-- スライド2: マットレス表面洗浄 -->
-<div class="ba-slide-mattress flex-shrink-0 w-full snap-center" data-caption="マットレス表面洗浄">
-<div class="grid grid-cols-2 gap-2">
-<div class="relative rounded-l-xl overflow-hidden"><span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">Before</span><img src="images/mattress-before2.jpg" alt="マットレス表面 汚れ・変色状態" class="w-full aspect-[4/3] object-cover" loading="lazy"></div>
-<div class="relative rounded-r-xl overflow-hidden"><span class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">After</span><img src="images/mattress-after2.jpg" alt="マットレス表面 洗浄後の清潔な状態" class="w-full aspect-[4/3] object-cover" loading="lazy"></div>
-</div></div>
 </div>
-<p class="text-xs text-text-sub text-center mt-2 ba-caption-mattress">マットレス シミ取りクリーニング</p>
-<div class="flex items-center justify-center gap-2 mt-2">
-<span class="ba-dot-mattress w-2 h-2 rounded-full bg-primary transition-all"></span>
-<span class="ba-dot-mattress w-2 h-2 rounded-full bg-border transition-all"></span>
+<p class="text-xs text-text-sub text-center mt-2 ba-caption">マットレス シミ取りクリーニング</p>
+<div class="ba-dots-container flex items-center justify-center gap-2 mt-2">
+<span class="ba-dot w-2 h-2 rounded-full bg-primary transition-all"></span>
+<span class="ba-dot w-2 h-2 rounded-full bg-border transition-all"></span>
 </div>
 </div>
 <!-- 主な洗浄不可製品一覧 -->
-<h3 class="font-display font-bold text-base mb-3">主な洗浄不可製品一覧</h3>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.no_clean_title">主な洗浄不可製品一覧</h3>
 <div class="bg-surface rounded-xl p-5 mb-6 ring-1 ring-border">
-<ul class="space-y-1.5">
+<ul class="space-y-1.5" data-cms-list="modal_mattress.no_clean_list" data-cms-template="tpl-text-bullet-item">
 <li class="text-xs text-text-sub leading-relaxed">・低反発ウレタンマットレス</li>
-<li class="text-xs text-text-sub leading-relaxed">・ムートン高反発マットレス</li>
-<li class="text-xs text-text-sub leading-relaxed">・トゥルー デュアルポケット Silky</li>
-<li class="text-xs text-text-sub leading-relaxed">・Simmons クランジェル</li>
-<li class="text-xs text-text-sub leading-relaxed">・エアウィーヴ</li>
-<li class="text-xs text-text-sub leading-relaxed">・テンピュール</li>
-<li class="text-xs text-text-sub leading-relaxed">・マニフレックス</li>
 </ul>
 </div>
 <!-- 施工場所について -->
-<h3 class="font-display font-bold text-base mb-3">施工場所について</h3>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.location_title">施工場所について</h3>
 <div class="bg-warm-light rounded-xl p-5 mb-6">
-<ul class="space-y-2">
+<ul class="space-y-2" data-cms-list="modal_mattress.location_list" data-cms-template="tpl-warning-item-warm">
 <li class="flex items-start gap-2 text-xs text-text-sub leading-relaxed"><svg class="w-3.5 h-3.5 text-warm flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>基本、現在の設置場所にてクリーニングとなります。</li>
-<li class="flex items-start gap-2 text-xs text-text-sub leading-relaxed"><svg class="w-3.5 h-3.5 text-warm flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>施工室でマットレスが片付けできない場合もございます。</li>
-<li class="flex items-start gap-2 text-xs text-text-sub leading-relaxed"><svg class="w-3.5 h-3.5 text-warm flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>マットレス片付けの前に別途のスペースが必要な施工となります。</li>
 </ul>
 </div>
 <!-- 作業時間目安 -->
-<h3 class="font-display font-bold text-base mb-3">作業時間目安</h3>
-<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_mattress.duration_title">作業時間目安</h3>
+<div class="rounded-xl ring-1 ring-border overflow-hidden mb-2" data-cms-list="modal_mattress.duration_list" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">シングル片面の場合</span><span class="text-text-sub">約1時間30分〜2時間</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">ダブル両面の場合</span><span class="text-text-sub">約2時間〜2時間30分</span></div>
 </div>
-<p class="text-[10px] text-text-light mb-6">※作業時間は作業当日の気温や湿度、汚れの状態、オプション作業の有無により前後することがあります。</p>
+<p class="text-[10px] text-text-light mb-6" data-cms-field="modal_mattress.duration_note">※作業時間は作業当日の気温や湿度、汚れの状態、オプション作業の有無により前後することがあります。</p>
 <!-- CTA -->
 <div class="flex flex-col sm:flex-row gap-3"><a href="https://liff.line.me/2009762744-ksEAwsSp?unique_key=cZRYo2&ts=1776083395" class="line-btn flex-1 inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white font-bold px-6 py-3.5 rounded-full text-sm"><img src="images/line-brand-icon.png" alt="LINE" class="w-7 h-7 rounded-md">無料お見積もり</a><a href="tel:06-7493-0993" class="flex-1 inline-flex items-center justify-center gap-2 bg-white text-text-main font-medium px-6 py-3.5 rounded-full text-sm ring-1 ring-border hover:ring-primary/30 transition-all"><svg class="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.94.39 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.87.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話で相談</a></div>
 </div></div></div>
 <!-- titan modal -->
 <div id="modal-titan" class="modal-overlay fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm" aria-hidden="true" role="dialog" aria-label="壁紙再生コーティング詳細">
 <div class="modal-panel bg-white w-full sm:max-w-2xl sm:rounded-2xl rounded-t-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
-<div class="sticky top-0 bg-white z-10 flex items-center justify-between px-6 py-4 border-b border-border"><h2 class="font-display font-bold text-lg tracking-tight">壁紙再生コーティング</h2><button class="modal-close w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface transition-colors" aria-label="閉じる"><svg class="w-5 h-5 text-text-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+<div class="sticky top-0 bg-white z-10 flex items-center justify-between px-6 py-4 border-b border-border"><h2 class="font-display font-bold text-lg tracking-tight" data-cms-field="modal_wall.title">壁紙再生コーティング</h2><button class="modal-close w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface transition-colors" aria-label="閉じる"><svg class="w-5 h-5 text-text-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
 <div class="p-6 sm:p-8">
 <!-- コンセプト -->
 <div class="bg-primary-50 rounded-xl p-5 mb-6">
-<p class="font-display font-bold text-base text-text-main mb-2">壁紙を張り替えずに、お好きな色でキレイに再生！</p>
-<p class="text-sm text-text-sub leading-relaxed">汚れや黄ばみが気になる壁紙に、当社オリジナルの染色コーティング剤を塗布して新品同様に仕上げます。<strong class="text-text-main">カラーサンプルからお好きな色をお選びいただけます</strong>ので、お部屋の雰囲気に合わせた仕上がりが可能。さらに<strong class="text-text-main">抗菌・消臭・防カビ効果が長期持続</strong>します。</p>
+<p class="font-display font-bold text-base text-text-main mb-2" data-cms-field="modal_wall.concept_title">壁紙を張り替えずに、お好きな色でキレイに再生！</p>
+<p class="text-sm text-text-sub leading-relaxed" data-cms-field="modal_wall.concept_text">汚れや黄ばみが気になる壁紙に、当社オリジナルの染色コーティング剤を塗布して新品同様に仕上げます。カラーサンプルからお好きな色をお選びいただけますので、お部屋の雰囲気に合わせた仕上がりが可能。さらに抗菌・消臭・防カビ効果が長期持続します。</p>
 </div>
 <!-- メリット -->
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
 <div class="bg-surface rounded-xl p-4 ring-1 ring-border">
-<p class="font-bold text-sm text-primary mb-1">張り替えの半額以下</p>
-<p class="text-xs text-text-sub leading-relaxed">6帖（天井含む）の壁紙を張り替えると平均4万円。壁紙再生コーティングなら約2万円で、費用を大幅に抑えられます。</p>
+<p class="font-bold text-sm text-primary mb-1" data-cms-field="modal_wall.merit_1_title">張り替えの半額以下</p>
+<p class="text-xs text-text-sub leading-relaxed" data-cms-field="modal_wall.merit_1_text">6帖（天井含む）の壁紙を張り替えると平均4万円。壁紙再生コーティングなら約2万円で、費用を大幅に抑えられます。</p>
 </div>
 <div class="bg-surface rounded-xl p-4 ring-1 ring-border">
-<p class="font-bold text-sm text-primary mb-1">施工スピードは張り替えの3倍</p>
-<p class="text-xs text-text-sub leading-relaxed">6帖の壁紙張り替えは通常6〜7時間。壁紙再生コーティングなら2〜3時間で完了。有害な接着剤も不使用のため、施工後すぐに普段通りの生活ができます。</p>
+<p class="font-bold text-sm text-primary mb-1" data-cms-field="modal_wall.merit_2_title">施工スピードは張り替えの3倍</p>
+<p class="text-xs text-text-sub leading-relaxed" data-cms-field="modal_wall.merit_2_text">6帖の壁紙張り替えは通常6〜7時間。壁紙再生コーティングなら2〜3時間で完了。有害な接着剤も不使用のため、施工後すぐに普段通りの生活ができます。</p>
 </div>
 </div>
 <!-- 安全4効果 -->
@@ -868,55 +840,56 @@
 </div>
 </div>
 <!-- 料金目安 -->
-<div class="flex items-baseline gap-3 mb-3"><h3 class="font-display font-bold text-base">料金目安</h3><span class="text-[10px] text-text-light">※すべて税込価格</span></div>
+<div class="flex items-baseline gap-3 mb-3"><h3 class="font-display font-bold text-base" data-cms-field="modal_wall.price_section_title">料金目安</h3><span class="text-[10px] text-text-light" data-cms-field="modal_wall.price_section_note">※すべて税込価格</span></div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">ワンルームM（6帖）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_1_name">ワンルームM（6帖）</div>
+<div data-cms-list="modal_wall.price_group_1_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥16,500〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥22,000〜</span></div>
+</div>
 </div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">ワンルームLDK（10帖）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_2_name">ワンルームLDK（10帖）</div>
+<div data-cms-list="modal_wall.price_group_2_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥27,500〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥33,000〜</span></div>
+</div>
 </div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">2DK（床面積40㎡位）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_3_name">2DK（床面積40㎡位）</div>
+<div data-cms-list="modal_wall.price_group_3_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥55,000〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥66,000〜</span></div>
+</div>
 </div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">2LDK（床面積55㎡位）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_4_name">2LDK（床面積55㎡位）</div>
+<div data-cms-list="modal_wall.price_group_4_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥71,500〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥91,300〜</span></div>
+</div>
 </div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-2">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">3LDK（床面積70㎡位）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_5_name">3LDK（床面積70㎡位）</div>
+<div data-cms-list="modal_wall.price_group_5_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥88,000〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥99,000〜</span></div>
+</div>
 </div>
 <div class="rounded-xl ring-1 ring-border overflow-hidden mb-6">
-<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary">4LDK（床面積90㎡位）</div>
+<div class="px-5 py-2.5 bg-primary/15 text-sm font-bold text-primary" data-cms-field="modal_wall.price_group_6_name">4LDK（床面積90㎡位）</div>
+<div data-cms-list="modal_wall.price_group_6_items" data-cms-template="tpl-price-row">
 <div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">壁のみ</span><span class="text-primary font-bold">¥121,000〜</span></div>
-<div class="price-row flex justify-between items-center px-5 py-2.5 text-sm"><span class="text-text-main font-medium">天井・壁</span><span class="text-primary font-bold">¥154,000〜</span></div>
+</div>
 </div>
 <!-- キレイシアのポイント -->
-<h3 class="font-display font-bold text-base mb-3">キレイシアのポイント</h3>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_wall.points_title">キレイシアのポイント</h3>
 <div class="bg-primary-50 rounded-xl p-5 mb-6">
-<p class="font-bold text-sm text-primary mb-3">プロの技でスッキリ！快適な空間をご提供します！</p>
-<ul class="space-y-2">
+<p class="font-bold text-sm text-primary mb-3" data-cms-field="modal_wall.points_intro">プロの技でスッキリ！快適な空間をご提供します！</p>
+<ul class="space-y-2" data-cms-list="modal_wall.points_list" data-cms-template="tpl-point-item">
 <li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>自然でまるで新品のような仕上がり</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>安心の損害保険加入済み</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>職人直通で安心</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>安心のアフターフォロー</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>作業にご不満の場合は無料にて追加対応</li>
-<li class="flex items-start gap-2 text-sm text-text-sub"><svg class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/></svg>コロナ対策の徹底</li>
 </ul>
 </div>
 <!-- Before / After（スワイプ式カルーセル） -->
-<h3 class="font-display font-bold text-base mb-3">Before / After</h3>
+<h3 class="font-display font-bold text-base mb-3" data-cms-field="modal_wall.before_after_title">Before / After</h3>
 <div class="mb-6">
-<div id="ba-slider-wall" class="flex overflow-x-auto snap-x snap-mandatory rounded-xl" style="scrollbar-width:none;-ms-overflow-style:none">
-<div class="ba-slide-wall flex-shrink-0 w-full snap-center" data-caption="壁紙の黄ばみ・汚れを再生">
+<div class="flex overflow-x-auto snap-x snap-mandatory rounded-xl" style="scrollbar-width:none;-ms-overflow-style:none" data-cms-list="modal_wall.before_after_slides" data-cms-template="tpl-ba-slide">
+<div class="ba-slide flex-shrink-0 w-full snap-center" data-caption="壁紙の黄ばみ・汚れを再生">
 <div class="grid grid-cols-2 gap-2">
 <div class="relative rounded-l-xl overflow-hidden">
 <span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">Before</span>
@@ -928,23 +901,11 @@
 </div>
 </div>
 </div>
-<div class="ba-slide-wall flex-shrink-0 w-full snap-center" data-caption="お好みの色で新品同様の仕上がり">
-<div class="grid grid-cols-2 gap-2">
-<div class="relative rounded-l-xl overflow-hidden">
-<span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">Before</span>
-<img src="images/wall-coating-before2.jpg" alt="壁紙再生コーティング施工前" class="w-full aspect-[4/3] object-cover" loading="lazy">
 </div>
-<div class="relative rounded-r-xl overflow-hidden">
-<span class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded z-10">After</span>
-<img src="images/wall-coating-after2.jpg" alt="壁紙再生コーティング施工後" class="w-full aspect-[4/3] object-cover" loading="lazy">
-</div>
-</div>
-</div>
-</div>
-<p class="text-xs text-text-sub text-center mt-2" id="ba-caption-wall">壁紙の黄ばみ・汚れを再生</p>
-<div class="flex items-center justify-center gap-2 mt-2">
-<span class="ba-dot-wall w-2 h-2 rounded-full bg-primary transition-all"></span>
-<span class="ba-dot-wall w-2 h-2 rounded-full bg-border transition-all"></span>
+<p class="text-xs text-text-sub text-center mt-2 ba-caption">壁紙の黄ばみ・汚れを再生</p>
+<div class="ba-dots-container flex items-center justify-center gap-2 mt-2">
+<span class="ba-dot w-2 h-2 rounded-full bg-primary transition-all"></span>
+<span class="ba-dot w-2 h-2 rounded-full bg-border transition-all"></span>
 </div>
 </div>
 <!-- CTA -->
