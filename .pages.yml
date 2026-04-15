@@ -543,6 +543,124 @@ content:
           - {name: question, label: 質問, type: string}
           - {name: answer, label: 回答, type: text}
 
+  # サービス詳細：水回りクリーニング（モーダル）
+  - name: modal_water
+    label: 詳細：水回りクリーニング
+    type: file
+    path: content/modals/water.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: concerns_title, label: お悩みリスト 見出し, type: string}
+      - name: concerns_list
+        label: お悩みリスト 項目
+        type: string
+        list: true
+      - {name: concerns_outro, label: お悩みリスト 締め, type: string}
+      - {name: price_section_title, label: 価格表 見出し, type: string}
+      - {name: price_section_note, label: 価格表 注記, type: string}
+      - name: price_list
+        label: 価格表 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: options_title, label: オプション 見出し, type: string}
+      - name: options_list
+        label: オプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: before_after_title, label: Before/After 見出し, type: string}
+      - name: before_after_slides
+        label: Before/After スライド
+        type: object
+        list: true
+        fields:
+          - {name: caption, label: キャプション, type: string}
+          - {name: before_image, label: Before画像, type: image}
+          - {name: before_alt, label: Before画像説明, type: string}
+          - {name: after_image, label: After画像, type: image}
+          - {name: after_alt, label: After画像説明, type: string}
+
+  # サービス詳細：ソファクリーニング（モーダル）
+  - name: modal_sofa
+    label: 詳細：ソファクリーニング
+    type: file
+    path: content/modals/sofa.json
+    format: json
+    fields:
+      - {name: title, label: モーダルタイトル, type: string}
+      - {name: concerns_title, label: お悩みリスト 見出し, type: string}
+      - name: concerns_list
+        label: お悩みリスト 項目
+        type: string
+        list: true
+      - {name: intro_main, label: 紹介文 メイン, type: string}
+      - {name: intro_sub, label: 紹介文 サブ, type: string}
+      - {name: price_section_title, label: 基本料金 見出し, type: string}
+      - {name: price_section_note, label: 基本料金 注記, type: string}
+      - name: price_list
+        label: 基本料金 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 素材, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: options_title, label: オプション 見出し, type: string}
+      - name: options_list
+        label: オプション 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 項目名, type: string}
+          - {name: price, label: 価格, type: string}
+      - {name: size_chart_title, label: サイズ早見表 見出し, type: string}
+      - name: size_chart_list
+        label: サイズ早見表 項目
+        type: object
+        list: true
+        fields:
+          - {name: name, label: 人掛け, type: string}
+          - {name: price, label: 幅, type: string}
+      - name: size_warning_list
+        label: サイズに関する注意書き
+        type: string
+        list: true
+      - {name: points_title, label: ポイント 見出し, type: string}
+      - {name: points_intro, label: ポイント リード文, type: string}
+      - name: points_list
+        label: ポイント 項目
+        type: string
+        list: true
+      - {name: no_clean_title, label: 洗浄不可製品 見出し, type: string}
+      - name: no_clean_list
+        label: 洗浄不可製品 項目
+        type: string
+        list: true
+      - {name: no_clean_note, label: 洗浄不可製品 注記, type: string}
+      - {name: customer_request_title, label: お客様お願い 見出し, type: string}
+      - name: customer_request_list
+        label: お客様お願い 項目
+        type: string
+        list: true
+      - {name: booking_notes_title, label: 予約注意事項 見出し, type: string}
+      - name: booking_notes_list
+        label: 予約注意事項 項目
+        type: string
+        list: true
+      - {name: faq_title, label: FAQ 見出し, type: string}
+      - name: faq_list
+        label: FAQ 項目
+        type: object
+        list: true
+        fields:
+          - {name: question, label: 質問, type: string}
+          - {name: answer, label: 回答, type: text}
+
   # キャンペーン告知（サービス直下に表示）
   - name: campaign
     label: キャンペーン告知
