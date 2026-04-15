@@ -146,6 +146,7 @@
 </span>
 </div>
 <h2 class="font-display font-bold text-2xl sm:text-3xl text-center text-text-main tracking-tight mb-4" data-cms-field="campaign.title">期間限定キャンペーンのお知らせ</h2>
+<div class="campaign-image-wrapper mb-4 text-center hidden" data-cms-image-wrapper="campaign.image"><img src="" alt="キャンペーン画像" class="inline-block max-w-full h-auto rounded-xl shadow-sm" loading="lazy" data-cms-field="campaign.image"></div>
 <div class="text-text-sub text-sm sm:text-base leading-relaxed text-center max-w-2xl mx-auto" data-cms-field="campaign.body">
 ここにキャンペーン内容を記載します。（Pages CMSから編集可能）
 </div>
@@ -1439,6 +1440,15 @@ if(isHidden)content.scrollIntoView({behavior:'smooth',block:'nearest'});
           section.classList.remove('hidden');
         } else {
           section.classList.add('hidden');
+        }
+      }
+      // キャンペーン画像の表示制御（画像URLが設定されていれば表示、空なら非表示）
+      const imageWrapper = document.querySelector('[data-cms-image-wrapper="campaign.image"]');
+      if (imageWrapper) {
+        if (campaign.image && campaign.image.trim() !== '') {
+          imageWrapper.classList.remove('hidden');
+        } else {
+          imageWrapper.classList.add('hidden');
         }
       }
       applyContent('campaign', campaign);
