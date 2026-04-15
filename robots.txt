@@ -1,13 +1,12 @@
 # ============================================
-# robots.txt for キレイシア LP (2026)
+# robots.txt for キレイシア LP
 # AI検索許可 / 学習botブロック / SEO優先
-# 公開時に yourdomain.com を実際のドメインに差し替えること
 # ============================================
 
 # 全botデフォルト
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://kireisia.github.io/sitemap.xml
 
 # ---- AI検索bot: 許可（表示機会確保） ----
 User-agent: OAI-SearchBot
