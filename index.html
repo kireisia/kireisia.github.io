@@ -172,9 +172,7 @@
 </div>
 <h2 class="font-display font-bold text-2xl sm:text-3xl text-center text-text-main tracking-tight mb-4" data-cms-field="campaign.title">期間限定キャンペーンのお知らせ</h2>
 <div class="campaign-image-wrapper mb-4 text-center hidden" data-cms-image-wrapper="campaign.image"><img src="" alt="キャンペーン画像" class="inline-block max-w-full h-auto rounded-xl shadow-sm" loading="lazy" data-cms-field="campaign.image"></div>
-<div class="text-text-sub text-sm sm:text-base leading-relaxed text-center max-w-2xl mx-auto" data-cms-field="campaign.body">
-ここにキャンペーン内容を記載します。（Pages CMSから編集可能）
-</div>
+<div class="text-text-sub text-sm sm:text-base leading-relaxed text-center max-w-2xl mx-auto" data-cms-field="campaign.body" data-cms-hide-empty="true"></div>
 <div class="text-center mt-6" data-cms-field="campaign.period_wrap">
 <span class="inline-block bg-primary-50 text-primary text-xs font-bold px-4 py-2 rounded-full" data-cms-field="campaign.period">期間：未定</span>
 </div>
@@ -1477,6 +1475,14 @@ if(isHidden)content.scrollIntoView({behavior:'smooth',block:'nearest'});
         }
       }
       applyContent('campaign', campaign);
+      // 空の要素を非表示にする（本文・期間など）
+      document.querySelectorAll('[data-cms-hide-empty="true"]').forEach(function(el){
+        if (!el.textContent.trim()) {
+          el.classList.add('hidden');
+        } else {
+          el.classList.remove('hidden');
+        }
+      });
     }
 
     // 基本情報
