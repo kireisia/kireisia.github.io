@@ -10,69 +10,33 @@
   "price_section_note": "※すべて税込価格",
   "price_group_1_name": "ワンルームM（6帖）",
   "price_group_1_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥16,500〜"},
+    {"name": "天井・壁", "price": "¥22,000〜"}
   ],
   "price_group_2_name": "ワンルームLDK（10帖）",
   "price_group_2_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥27,500〜"},
+    {"name": "天井・壁", "price": "¥33,000〜"}
   ],
   "price_group_3_name": "2DK（床面積40㎡位）",
   "price_group_3_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥55,000〜"},
+    {"name": "天井・壁", "price": "¥66,000〜"}
   ],
   "price_group_4_name": "2LDK（床面積55㎡位）",
   "price_group_4_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥71,500〜"},
+    {"name": "天井・壁", "price": "¥91,300〜"}
   ],
   "price_group_5_name": "3LDK（床面積70㎡位）",
   "price_group_5_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥88,000〜"},
+    {"name": "天井・壁", "price": "¥99,000〜"}
   ],
   "price_group_6_name": "4LDK（床面積90㎡位）",
   "price_group_6_items": [
-    {
-      "name": "壁のみ",
-      "price": "お見積り"
-    },
-    {
-      "name": "天井・壁",
-      "price": "お見積り"
-    }
+    {"name": "壁のみ", "price": "¥121,000〜"},
+    {"name": "天井・壁", "price": "¥154,000〜"}
   ],
   "points_title": "キレイシアのポイント",
   "points_intro": "プロの技でスッキリ！快適な空間をご提供します！",
@@ -86,19 +50,7 @@
   ],
   "before_after_title": "Before / After",
   "before_after_slides": [
-    {
-      "caption": "壁紙の黄ばみ・汚れを再生",
-      "before_image": "images/wall-coating-before1.jpg",
-      "before_alt": "壁紙再生コーティング施工前",
-      "after_image": "images/wall-coating-after1.jpg",
-      "after_alt": "壁紙再生コーティング施工後"
-    },
-    {
-      "caption": "お好みの色で新品同様の仕上がり",
-      "before_image": "images/wall-coating-before2.jpg",
-      "before_alt": "壁紙再生コーティング施工前",
-      "after_image": "images/wall-coating-after2.jpg",
-      "after_alt": "壁紙再生コーティング施工後"
-    }
+    {"caption": "壁紙の黄ばみ・汚れを再生", "before_image": "images/wall-coating-before1.jpg", "before_alt": "壁紙再生コーティング施工前", "after_image": "images/wall-coating-after1.jpg", "after_alt": "壁紙再生コーティング施工後"},
+    {"caption": "お好みの色で新品同様の仕上がり", "before_image": "images/wall-coating-before2.jpg", "before_alt": "壁紙再生コーティング施工前", "after_image": "images/wall-coating-after2.jpg", "after_alt": "壁紙再生コーティング施工後"}
   ]
 }

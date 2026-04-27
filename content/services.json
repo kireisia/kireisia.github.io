@@ -3,19 +3,19 @@
     "image": "images/aircon-top.png",
     "title": "エアコンクリーニング",
     "description": "ダニ・カビ・ホコリを高圧洗浄で徹底除去。完全分解清掃にも対応。全メーカー対応。",
-    "price": "お見積り"
+    "price": "¥9,000〜（税込）"
   },
   "washer": {
     "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80",
     "title": "洗濯機クリーニング",
     "description": "分解洗浄で洗濯槽の裏側まで徹底洗浄。頑固なカビもスッキリ除去。",
-    "price": "お見積り"
+    "price": "¥15,000〜（税込）"
   },
   "water": {
     "image": "images/water-top.png",
     "title": "水回りクリーニング",
     "description": "キッチン・浴室・トイレ・洗面台のカビ・水垢をピカピカに。",
-    "price": "お見積り"
+    "price": "¥5,000〜（税込）"
   },
   "sofa": {
     "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80",
@@ -39,7 +39,7 @@
     "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     "title": "空室清掃",
     "description": "引越し前後や退去後のお部屋を隅々まで丁寧に仕上げます。",
-    "price": "お見積り"
+    "price": "¥27,000〜"
   },
   "aircon_install": {
     "image": "images/aircon-install-top.png",
