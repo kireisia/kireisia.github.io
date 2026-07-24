@@ -10,7 +10,6 @@
   <link rel="canonical" href="https://www.kireisia.co.jp/">
   <!-- 旧アドレス自体は検索結果に出さない -->
   <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url=https://www.kireisia.co.jp/">
 
   <style>
     body {
@@ -37,8 +36,28 @@
     <a href="https://www.kireisia.co.jp/" id="newSiteLink">新しいホームページを開く</a>
   </div>
   <script>
-    // 新サイトのトップへ移動する（戻るボタンで404に戻らないよう置き換える）
-    location.replace("https://www.kireisia.co.jp/");
+    // 旧アドレスのページ名をそのまま引き継いで、新サイトの同じページへ移動する
+    // 例）/service.html → https://www.kireisia.co.jp/service.html
+    (function () {
+      var NEW_SITE = "https://www.kireisia.co.jp";
+      // 新サイトに存在するページだけ引き継ぐ（存在しないものはトップへ）
+      var KNOWN_PAGES = [
+        "/index.html", "/service.html", "/about.html", "/company.html",
+        "/blog.html", "/contact.html", "/privacy.html"
+      ];
+      var path = window.location.pathname;
+      var destination = NEW_SITE + "/";
+      if (KNOWN_PAGES.indexOf(path) !== -1) {
+        destination = NEW_SITE + path;
+      } else if (path.indexOf("/blog/") === 0) {
+        // ブログ記事は新サイトでも同じURL構成のため、そのまま引き継ぐ
+        destination = NEW_SITE + path;
+      }
+      // ボタンのリンク先も合わせておく（自動移動できなかった場合の保険）
+      var link = document.getElementById("newSiteLink");
+      if (link) { link.href = destination; }
+      location.replace(destination);
+    })();
   </script>
 </body>
 </html>
