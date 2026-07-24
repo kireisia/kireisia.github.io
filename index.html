@@ -7,10 +7,10 @@
   <!-- 旧アドレスに来た方を、新しい公式サイトへ自動で案内するためのページ。
        LPの内容は表示しない（同じ会社のサイトが2つある状態を避けるため）。 -->
   <!-- 検索エンジンに「正式なURLは新サイト」と伝える -->
-  <link rel="canonical" href="https://www.kireisia.co.jp/">
+  <link rel="canonical" href="https://www.kireisia.co.jp/service.html">
   <!-- 旧アドレス自体は検索結果に出さない -->
   <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url=https://www.kireisia.co.jp/">
+  <meta http-equiv="refresh" content="0; url=https://www.kireisia.co.jp/service.html">
 
   <style>
     body {
@@ -34,11 +34,12 @@
   <div class="box">
     <h1>ホームページは移転しました</h1>
     <p>自動で新しいページへ移動します。<br>切り替わらない場合は下のボタンをタップしてください。</p>
-    <a href="https://www.kireisia.co.jp/" id="newSiteLink">新しいホームページを開く</a>
+    <a href="https://www.kireisia.co.jp/service.html" id="newSiteLink">新しいホームページを開く</a>
   </div>
   <script>
-    // 新サイトのトップへ移動する（戻るボタンで404に戻らないよう置き換える）
-    location.replace("https://www.kireisia.co.jp/");
+    // サービス一覧ページへ移動する（戻るボタンで戻らないよう置き換える）
+    // ※LINE公式リッチメニューのキャッシュ対策。トップに戻す場合は下のURLを "/" に変更
+    location.replace("https://www.kireisia.co.jp/service.html");
   </script>
 </body>
 </html>
